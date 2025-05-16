@@ -13,7 +13,7 @@ There are some different dumps:
 
 ## INI Templates
 
-The `gather.py` script collects variables set by different quality levels and outputs them in the `ini` format. Every entry has the format: `Variable.Name=LOW; LOW/MEDIUM/HIGH/ULTRA`.
+The `gather.py` script collects variables set by different quality levels and outputs them in the `ini` format. Every entry has the format: `Variable.Name=LOW; (LOW/MEDIUM/HIGH/ULTRA)`.
 
 Script output is saved as `GatheredQualitySettings.ini`. But because of the game scalaility group configuration it contains duplicated entries in different categories.
 

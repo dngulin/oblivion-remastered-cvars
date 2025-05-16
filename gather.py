@@ -55,9 +55,9 @@ for group, levels in groups:
     for key in sorted(diff_key_set):
         if len(sg) == 4:
             values = [sg[0][key], sg[1][key], sg[2][key], sg[3][key]]
-            print(f"{key}={values[0]}; {values[0]}/{values[1]}/{values[2]}/{values[3]}")
+            print(f"{key}={values[0]}; ({values[0]}/{values[1]}/{values[2]}/{values[3]})")
         else:
             values = [sg[0][key], sg[1][key]]
-            print(f"{key}={values[0]}; {values[0]}/{values[1]}")
+            print(f"{key}={values[0]}; ({values[0]}/{values[1]})")
 
     print()
