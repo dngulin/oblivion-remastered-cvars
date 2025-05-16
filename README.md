@@ -17,4 +17,11 @@ The `gather.py` script collects variables set by different quality levels and ou
 
 Script output is saved as `GatheredQualitySettings.ini`. But because of the game scalaility group configuration it contains duplicated entries in different categories.
 
-The `FilteredQualitySettings.ini` is manually cleaned up version of that file. It gives a good overview of actual quality settings and can be used as a template for custom graphics settings.
+The `DeduplicatedQualitySettings.ini` is a cleaned output version (without duplicated variables and scalability group settings).
+It gives a good overview of actual quality settings and can be used as a template for custom graphics settings.
+
+Files are produced with these commands:
+```
+./gather.py > GatheredQualitySettings.ini
+./gather.py tidy > DeduplicatedQualitySettings.ini
+```
