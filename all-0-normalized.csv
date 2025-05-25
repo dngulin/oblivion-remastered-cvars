@@ -1068,7 +1068,7 @@ LogNamedEventFilters,Frame *,SystemSettingsIni
 LWI.Editor.GridSize,-1,Constructor
 MallocBinned2.FlushThreadCacheMaxWaitTime,0.02,Constructor
 MallocBinned3.FlushThreadCacheMaxWaitTime,0.02,Constructor
-MaxSkinBones,(Default=65536;PerPlatform=(('Mobile'; 256))),ProjectSetting (normalized)
+MaxSkinBones,"(Default=65536,PerPlatform=((""Mobile"", 256)))",ProjectSetting (normalized)
 MediaIO.PreventFieldFlipping,1,Constructor
 memory.logGenericPlatformMemoryStats,1,Constructor
 memory.MemoryPressureCriticalThresholdMB,0,Constructor
@@ -1271,7 +1271,7 @@ net.WithArrayOnRepFix,false,Constructor
 NetAnalytics.MinimumNumberOfPacketsForBurstTracking,5,Constructor
 NetAnalytics.NumberOfConsecutiveDroppedPacketsToConsiderBurst,3,Constructor
 NetAnalytics.PercentOfDroppedPacketsToConsiderBurst,0.2,Constructor
-NetworkEmulationProfiles,(ProfileName='Bad';ToolTip='Simulates laggy internet conditions'),ProjectSetting (normalized)
+NetworkEmulationProfiles,"(ProfileName=""Bad"",ToolTip=""Simulates laggy internet conditions"")",ProjectSetting (normalized)
 networkversionoverride,0,Constructor
 niagara.CreateShadersOnLoad,0,Constructor
 Niagara.GPUCountBufferSlack,1.5,Constructor
@@ -1473,7 +1473,7 @@ p.Chaos.Deformable.XPBDWeakConstraintEnableDraw,false,Constructor
 p.Chaos.Deformable.XPBDWeakConstraintLineWidth,5,Constructor
 p.Chaos.Deformable.XPBDWeakConstraintParticleWidth,20,Constructor
 p.Chaos.DisallowSetKinematicTargetOnDynamics,true,Constructor
-p.Chaos.DumpHierElementBuckets,1;4;8;16;32;64;128;256;512,Constructor (normalized)
+p.Chaos.DumpHierElementBuckets,"1,4,8,16,32,64,128,256,512",Constructor (normalized)
 p.Chaos.GC.CacheComponentSpaceBounds,true,Constructor
 p.Chaos.GC.EmitRootBreakingEvent,false,Constructor
 p.Chaos.GC.EnableCollisionParticles,true,Constructor
@@ -2023,7 +2023,7 @@ r.Bloom.WarnKernelResolution,1,Constructor
 r.BloomQuality,4,Scalability
 r.BufferVisualizationDumpFrames,0,Constructor
 r.BufferVisualizationDumpFramesAsHDR,0,Constructor
-r.BufferVisualizationOverviewTargets,BaseColor;Specular;SubsurfaceColor;WorldNormal;SeparateTranslucencyRGB;;;WorldTangent;SeparateTranslucencyA;;;Opacity;SceneDepth;Roughness;Metallic;ShadingModel;;SceneDepthWorldUnits;SceneColor;PreTonemapHDRColor;PostTonemapHDRColor,Constructor (normalized)
+r.BufferVisualizationOverviewTargets,"BaseColor,Specular,SubsurfaceColor,WorldNormal,SeparateTranslucencyRGB,,,WorldTangent,SeparateTranslucencyA,,,Opacity,SceneDepth,Roughness,Metallic,ShadingModel,,SceneDepthWorldUnits,SceneColor,PreTonemapHDRColor,PostTonemapHDRColor",Constructor (normalized)
 r.BufferVisualizationTarget,,Constructor
 r.Cache.DrawDirectionalShadowing,0,Constructor
 r.Cache.DrawInterpolationPoints,0,Constructor
@@ -3394,7 +3394,7 @@ r.Nanite.Visualize.ComplexityScale,80,Constructor
 r.Nanite.Visualize.Composite,-1,Constructor
 r.Nanite.Visualize.EdgeDetect,1,Constructor
 r.Nanite.Visualize.OverdrawScale,15,Constructor
-r.Nanite.VisualizeOverview,Triangles;Clusters;Instances;Primitives;;;;;;;;;Overdraw;MaterialID;RasterBins;EvaluateWPO,Constructor (normalized)
+r.Nanite.VisualizeOverview,"Triangles,Clusters,Instances,Primitives,,,,,,,,,Overdraw,MaterialID,RasterBins,EvaluateWPO",Constructor (normalized)
 r.Nanite.VSMInvalidateOnLODDelta,0,Constructor
 r.Nanite.VSMMeshShaderRasterization,0,Constructor
 r.NeverOcclusionTestDistance,0,Constructor
@@ -5344,7 +5344,7 @@ SyncLoadTracker.DumpReportToLogs,true,Constructor
 SyncLoadTracker.RegisterScopeDurationTresholdMS,1,Constructor
 SyncLoadTracker.ReportFileName,Report,Constructor
 t.FPSChart.ExcludeIdleTime,0,Constructor
-t.FPSChart.InterestingFramerates,30;60;120,Constructor (normalized)
+t.FPSChart.InterestingFramerates,"30,60,120",Constructor (normalized)
 t.FPSChart.MaxFrameDeltaSecsBeforeDiscarding,10,Constructor
 t.FPSChart.OpenFolderOnDump,1,Constructor
 t.FPSChart.RoundFPSBeforeBinning,0,Constructor

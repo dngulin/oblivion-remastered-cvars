@@ -17,7 +17,7 @@ There are some different dumps:
 - `all-groups/cvars-scalability-{quality_level}.csv` files contain only variables set by scalability. They were produced by a simple text filtering (`cat cvars-all-{quality_level}.csv | grep ",Scalability"`)
 - `by-group/all-0.csv` is dumped for all low settings
 - `by-group/{group}-{quality_level}.csv` files contain dumps when only one setting is changed from low
-- `all-0-normalized.csv` - crated from `by-group/all-0.csv` but with normalized values to properly display in Github UI (value commas replaced with semicolons)
+- `all-0-normalized.csv` - crated from `by-group/all-0.csv` but with normalized values to properly display in Github UI
 
 ## Engine.ini Templates
 
