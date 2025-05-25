@@ -35,7 +35,7 @@ Files are produced with these commands:
 
 ### Duplicated CVars
 
-Theese variables are defined in multiple categories. Set them in your custom `Engine.ini` to have expected values.
+These variables are defined in multiple categories. Set them in your custom `Engine.ini` to have expected values.
 
 ```ini
 r.AOQuality=1; gi, texture, reflection, postprocessing, hair, cloth, swrt: (1/2/2/2)
