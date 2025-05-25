@@ -6,8 +6,8 @@ tidy = len(sys.argv) > 1 and sys.argv[1] == "tidy"
 
 tidy_key_groups = {
     "r.AOQuality": "postprocessing",
-    "r.Lumen.Reflections.ScreenTraces": "reflections",
-    "r.SSR.Quality": "reflections",
+    "r.Lumen.Reflections.ScreenTraces": "reflection",
+    "r.SSR.Quality": "reflection",
 }
 
 def index(file_path):
