@@ -18,7 +18,7 @@ There are some different dumps:
 - `by-group/all-0.csv` is dumped for all low settings
 - `by-group/{group}-{quality_level}.csv` files contain dumps when only one setting is changed from low
 
-## INI Templates
+## Engine.ini Templates
 
 The `gather.py` script collects variables set by different quality levels and outputs them in the `ini` format. Every entry has the format: `Variable.Name=LOW; (LOW/MEDIUM/HIGH/ULTRA)`.
 
@@ -35,7 +35,7 @@ Files are produced with these commands:
 
 ### Duplicated CVars
 
-Theese variables are defined in multiple categories. It is better to set them in your custom `Engine.ini` to have expected values.
+Theese variables are defined in multiple categories. Set them in your custom `Engine.ini` to have expected values.
 
 ```ini
 r.AOQuality=1; gi, texture, reflection, postprocessing, hair, cloth, swrt: (1/2/2/2)
@@ -52,7 +52,7 @@ r.DOF.Scatter.ForegroundCompositing=0; postprocessing: (0/0/1/1); hair, cloth: (
 r.DOF.TemporalAAQuality=0; postprocessing: (0/0/0/1); hair, cloth: (0/1/1/1); swrt: (0/1)
 ```
 
-### Virtuos CVars
+## Virtuos CVars
 
 Full list of Virtuos custom CVars and values for all-low settings. See the [full list](by-group/all-0.csv) for details.
 
