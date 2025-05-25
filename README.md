@@ -2,6 +2,13 @@
 
 This repository contains Unreal Engine 5 console variable dumps for different graphics settings and template ini-files to generate custom graphics settings.
 
+## TL;DR
+
+- [All CVars table](by-group/all-0.csv) with values at LOW settings
+- All CVars affected by graphics settings in the `Engine.ini` foramt:
+  - [Full list](GatheredQualitySettings.ini)
+  - [Dedulicated list](DeduplicatedQualitySettings.ini)
+
 ## Dumps
 
 There are some different dumps:
