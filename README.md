@@ -4,7 +4,7 @@ This repository contains Unreal Engine 5 console variable dumps for different gr
 
 ## TL;DR
 
-- [All CVars table](by-group/all-0.csv) with values at LOW settings
+- [All CVars table](all-0-normalized.csv) with values at LOW settings
 - All CVars affected by graphics settings in the `Engine.ini` foramt:
   - [Full list](GatheredQualitySettings.ini)
   - [Dedulicated list](DeduplicatedQualitySettings.ini)
@@ -17,6 +17,7 @@ There are some different dumps:
 - `all-groups/cvars-scalaility-{quality_level}.csv` files contain only variables set by scalability. They were produced by a simple text filtering (`cat cvars-all-{quality_level}.csv | grep ",Scalability"`)
 - `by-group/all-0.csv` is dumped for all low settings
 - `by-group/{group}-{quality_level}.csv` files contain dumps when only one setting is changed from low
+- `all-0-normalized.csv` - crated from `by-group/all-0.csv` but with normalized values to properly display in Github UI (value commas replaced with semicolons)
 
 ## Engine.ini Templates
 
@@ -54,7 +55,7 @@ r.DOF.TemporalAAQuality=0; postprocessing: (0/0/0/1); hair, cloth: (0/1/1/1); sw
 
 ## Virtuos CVars
 
-Full list of Virtuos custom CVars and values for all-low settings. See the [full list](by-group/all-0.csv) for details.
+Full list of Virtuos custom CVars and values for all-low settings.
 
 ```csv
 vts.AdditiveFOVBias,6,Constructor
