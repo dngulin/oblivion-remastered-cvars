@@ -5,16 +5,16 @@ This repository contains Unreal Engine 5 console variable dumps for different gr
 ## TL;DR
 
 - [All CVars table](all-0-normalized.csv) with values at LOW settings
-- All CVars affected by graphics settings in the `Engine.ini` foramt:
+- All CVars affected by graphics settings in the `Engine.ini` format:
   - [Full list](GatheredQualitySettings.ini)
-  - [Dedulicated list](DeduplicatedQualitySettings.ini)
+  - [Deduplicated list](DeduplicatedQualitySettings.ini)
 
 ## Dumps
 
 There are some different dumps:
 
 - `all-groups/cvars-all-{quality_level}.csv` files contain dumps for overall quality level (HWRT disabled)
-- `all-groups/cvars-scalaility-{quality_level}.csv` files contain only variables set by scalability. They were produced by a simple text filtering (`cat cvars-all-{quality_level}.csv | grep ",Scalability"`)
+- `all-groups/cvars-scalability-{quality_level}.csv` files contain only variables set by scalability. They were produced by a simple text filtering (`cat cvars-all-{quality_level}.csv | grep ",Scalability"`)
 - `by-group/all-0.csv` is dumped for all low settings
 - `by-group/{group}-{quality_level}.csv` files contain dumps when only one setting is changed from low
 - `all-0-normalized.csv` - crated from `by-group/all-0.csv` but with normalized values to properly display in Github UI (value commas replaced with semicolons)
@@ -23,7 +23,7 @@ There are some different dumps:
 
 The `gather.py` script collects variables set by different quality levels and outputs them in the `ini` format. Every entry has the format: `Variable.Name=LOW; (LOW/MEDIUM/HIGH/ULTRA)`.
 
-Script output is saved as `GatheredQualitySettings.ini`. But because of the game scalaility group configuration it contains duplicated entries in different categories.
+Script output is saved as `GatheredQualitySettings.ini`. But because of the game scalability group configuration it contains duplicated entries in different categories.
 
 The `DeduplicatedQualitySettings.ini` is a cleaned output version (without duplicated variables and scalability group settings).
 It gives a good overview of actual quality settings and can be used as a template for custom graphics settings.
